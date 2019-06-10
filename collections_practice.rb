@@ -1,4 +1,5 @@
-# your code goes here
+require 'pry'
+
 def begins_with_r(tools)
   answer =
   tools.each do |tool|
