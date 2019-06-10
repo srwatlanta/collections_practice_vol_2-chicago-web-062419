@@ -51,10 +51,17 @@ def count_elements(array)
 end
 
 def merge_data(keys, data)
-  keys.each do |x, y|
-    new_obj = x.merge
+  new_arr = []
+  data.each do |hash|
+    hash.each do |name, info|
+      keys.each do |val|
+        new_arr = val.merge(info) if val.values[0] == name
+      end
+    end
   end
+  new_arr
 end
+
 
 def find_cool(hash)
   new_arr = []
