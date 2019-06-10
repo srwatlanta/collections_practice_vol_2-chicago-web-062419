@@ -41,8 +41,13 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-
-
+  counts = Hash.new(0)
+  array.each { |item| counts[item] += 1 }
+  return_array = []
+  counts.each do |item, num|
+    item.each { |x, y| return_array << {x => y, :count => num} }
+  end
+  return_array
 end
 
 def merge_data(keys, data)
