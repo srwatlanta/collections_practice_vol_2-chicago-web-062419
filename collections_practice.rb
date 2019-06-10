@@ -54,11 +54,8 @@ end
 def merge_data(keys, data)
   new_arr = []
   data.each do |hash|
-    binding.pry
     hash.each do |name, info|
-      binding.pry
       keys.each do |val|
-        binding.pry
         new_arr << val.merge(info) if val.values[0] == name
       end
     end
