@@ -2,10 +2,12 @@
 def begins_with_r(tools)
   answer =
   tools.each do |tool|
-    return false if tool.start_with?("r") == false
+    if tool.start_with?("r") == false
+      return false
+    else
+      true
+    end
   end
-end
-  true
 end
 
 def contain_a(element)
