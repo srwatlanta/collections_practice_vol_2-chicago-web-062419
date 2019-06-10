@@ -77,6 +77,12 @@ def find_cool(array)
 end
 
 def organize_schools(schools)
-  schools.each do |name, location|
-end
+  locations = {}
+  schools.values.each do |location|
+    locations[location.values[0]] = []
+  end
+  schools.each do |school, location|
+    locations[location.values[0]] << school
+  end
+  locations
 end
