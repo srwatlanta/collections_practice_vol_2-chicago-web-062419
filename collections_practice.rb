@@ -4,6 +4,7 @@ def begins_with_r(tools)
   tools.each do |tool|
     return false if tool.start_with?("r") == false
   end
+end
   true
 end
 
