@@ -2,15 +2,9 @@
 def begins_with_r(tools)
   answer =
   tools.each do |tool|
-    first_letter = tool.chars.first
-    if first_letter == 'r'
-      answer = true
-    else
-      answer = false
-      return
-    end
+    return false if tool.start_with?("r") == false
   end
-  answer
+  true
 end
 
 def contain_a(element)
@@ -68,5 +62,9 @@ def find_cool(hash)
 end
 
 def organize_schools(schools)
+  "Chicago" = []
+  "NYC" = []
+  "SF" = []
+  schools.each do |name, location|
 
 end
