@@ -65,9 +65,6 @@ def find_cool(hash)
 end
 
 def organize_schools(schools)
-  "Chicago" = []
-  "NYC" = []
-  "SF" = []
   schools.each do |name, location|
 
 end
