@@ -58,7 +58,7 @@ end
 def find_cool(hash)
   new_arr = []
   hash.each do |x, z|
-    x[:temperature].each do |temp|
+    z[:temperature].each do |temp|
       if temp == "cool"
         new_arr << x
       end
