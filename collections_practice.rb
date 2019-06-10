@@ -64,12 +64,12 @@ def merge_data(keys, data)
 end
 
 
-def find_cool(hash)
+def find_cool(array)
   new_arr = []
-  hash.each do |x, z|
-    x[:temperature].each do |temp|
-      if temp == "cool"
-        new_arr << x
+  array.each do |hash|
+    hash.each do |k, v|
+      if k == :temperature && v == "cool"
+        new_arr << hash
       end
     end
   end
