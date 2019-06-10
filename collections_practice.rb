@@ -5,7 +5,7 @@ def begins_with_r(tools)
     if tool.start_with?("r") == false
       return false
     else
-      true
+      return true
     end
   end
 end
