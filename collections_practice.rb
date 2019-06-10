@@ -68,7 +68,7 @@ def find_cool(array)
   new_arr = []
   array.each do |hash|
     hash.each do |k, v|
-      if k == :temperature && v == "cool"
+      if v == "cool"
         new_arr << hash
       end
     end
