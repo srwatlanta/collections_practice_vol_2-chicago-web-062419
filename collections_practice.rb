@@ -23,7 +23,7 @@ def first_wa(element)
   first = []
   element.each do |x|
     xs = x.to_s
-    if xs.include?("wa")
+    if xs.start_with?("wa")
       first << xs
     end
   end
